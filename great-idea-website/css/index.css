@@ -64,3 +64,179 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+/* Header */
+
+header {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+nav {
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+}
+
+nav a {
+	color: rgba(128, 128, 128, .5);
+	font-weight: bold;
+	font-family: 'Baloo Bhai 2', cursive;
+	text-decoration: none;
+	padding: 10px 5% 10px 5%;
+	margin: 10px;
+	margin-bottom: 0;
+}
+
+nav a:hover {
+	animation: play 0.5s linear;
+}
+
+@keyframes play {
+	0% {
+		letter-spacing: 0;
+	}
+	50% {
+		letter-spacing: 1px;
+	}
+	100% {
+		letter-spacing: 0;
+	}
+}
+
+header img {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+/* intro section */
+
+.intro {
+    height: 550px;
+    width: 90%;
+    margin: auto;
+    padding: 50px 15px;
+    border-bottom: 2px solid black;
+}
+
+.title {
+	display: inline-block;
+	margin: 100px 200px;
+}
+
+.title h1 {
+	text-align: center;
+    width: 300px;
+	font-size: 5em;
+}
+
+.intro button {
+	margin-left: 70px;
+	padding: 5px 40px;
+	font-size: 15px;
+	border: 1px solid black;
+	background-color: white;
+	cursor: pointer;
+}
+
+.intro button:hover {
+	animation: oval 0.5s linear;
+}
+
+@keyframes oval {
+	0% {
+		border-radius: 0;
+		transform: scaleX(1);
+	}
+	50% {
+		border-radius: 10px;
+		transform: scaleX(1.1);
+	}
+	100% {
+		border-radius: 0;
+		transform: scaleX(1);
+	}
+}
+
+.intro img {
+	float: right;
+	padding-top: 50px;
+}
+ 
+/* main content section */
+
+.pre-img, .post-img {
+	width: 90%;
+	height: 125px;
+	margin: auto;
+}
+
+.features, .about {
+	display: inline-block;
+	width: 40%;
+	padding: 25px;
+}
+
+.about {
+	float: right;
+}
+
+.middle-img {
+	display: block;
+	width: 90%;
+	margin: auto;
+}
+
+.post-img {
+	height: 200px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid black;
+}
+
+.services, .products, .vision {
+	display: inline-block;
+	width: 25%;
+	padding: 30px 5px;
+}
+
+.vision {
+	float: right;
+	clear: left;
+}
+
+.products {
+	margin-left: 150px;
+}
+
+/* footer */
+
+footer {
+	width: 90%;
+	height: 400px;
+	margin: auto;
+}
+
+.address-wrapper {
+	padding-top: 40px;
+}
+
+address {
+	font-weight: bold;
+}
+
+#number, #email {
+	display: inline-block;
+	padding-top: 25px;
+}
+
+footer p {
+	padding-top: 40px;
+	text-align: center;
+	font-weight: bold;
+}
